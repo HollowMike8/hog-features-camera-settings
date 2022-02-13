@@ -67,6 +67,6 @@ Try different mini batch sizes
 ##### Parameters:
 alpha = 0.01 ; n_layers NN = 3 ; hidden_units_1 = 12 ; hidden_units_2 = 9 ; mini batch size = [64, 128, 256, 512]
 ##### Observation:
-1. 
+1. Not much difference in losses by changing mini batch size --> use mini batch size = 512 (as before)
 ##### Next Steps:
 Try additional hidden layers
