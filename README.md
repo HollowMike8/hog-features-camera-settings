@@ -11,6 +11,22 @@ Project to develop an ML model (linear regression/NN..etc) to predict the output
 ##### Parameters:
 alpha = 0.1 ; n_layers NN = 2 ; hidden_units_1 = 6
 ##### Observation:
-Training loss and validation loss are close enough
+1. Training loss and validation loss are close --> no overfitting on training data
 ##### Next Steps:
 Try different learning rates
+
+### Trial_2:
+##### Parameters:
+alpha = [0.001,0.1] ; n_layers NN = 2 ; hidden_units_1 = 6
+##### Observation:
+1. learning rates <= 0.0124 give minimal loss --> use alpha = 0.0124 for next step
+##### Next Steps:
+Try different hidden units
+
+### Trial_2:
+##### Parameters:
+alpha = 0.0124 ; n_layers NN = 2 ; hidden_units_1 = [6, 8, 12, 16, 20]
+##### Observation:
+1. learning rates <= 0.01 give minimal loss --> use alpha = 0.01 for next step
+##### Next Steps:
+Try different hidden units
