@@ -26,7 +26,7 @@ alpha = 0.0124 ; n_layers NN = 3 ; hidden_units_1 = 12 ; hidden_units_2 = 9 ; mi
 1. Training loss and validation loss are less than previous case
 ##### Tuning:
 1. alpha = [0.001,0.1]: learning rate = 0.01 gives minimal loss --> use alpha = 0.01 
-2. hidden_units_2 = [9, 12, 16, 20] : all give approx. same minimal loss  --> use hidden_units_1 = 9
+2. hidden_units_2 = [9, 12, 16, 20] : all give approx. same minimal loss  --> use hidden_units_2 = 9
 3. mini batch size = [64, 128, 256, 512]: all give approx. same minimal loss --> use mini batch size  = 512
 ##### Next Steps:
 Try additional hidden layers
@@ -38,7 +38,7 @@ alpha = 0.01 ; n_layers NN = 4 ; hidden_units_1 = 12 ; hidden_units_2 = 9 ; hidd
 1. Training loss and validation loss are approx. same as previous case
 ##### Tuning:
 1. alpha = [0.001,0.1]: learning rate = 0.0143 gives minimal loss --> use alpha = 0.0143 
-2. hidden_units_3 = [9, 12, 16, 20] : 
-3. mini batch size = [64, 128, 256, 512]: 
+2. hidden_units_3 = [9, 12, 16, 20] : all give approx. same minimal loss  --> use hidden_units_3 = 9
+3. mini batch size = [64, 128, 256, 512]: all give approx. same minimal loss --> use mini batch size  = 512
 ##### Next Steps:
-Try additional hidden layers
+Try batch gradient descent
